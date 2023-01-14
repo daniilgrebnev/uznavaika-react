@@ -1,12 +1,14 @@
-import {Provider} from 'react-redux'
+import {Provider} from 'react-redux';
 import {store} from "./redux";
 
-import Layout from "./Layout";
+
 import AboutBlock from "./Components/AboutBlock";
 import SliderBlock from "./Components/SliderBlock";
 import FirstBlock from "./Components/FirstBlock";
 import FAQ from "./Components/FAQ";
 import Header from "./Layout/Header";
+import Map from "./Components/MapBlock";
+import Footer from "./Layout/Footer";
 
 function App() {
   return (
@@ -17,7 +19,8 @@ function App() {
             <AboutBlock />
             <SliderBlock />
             <FAQ />
-
+            <Map />
+            <Footer />
       </Provider>
     </>
   );
