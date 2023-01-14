@@ -1,4 +1,4 @@
-import data from '../../data/bread-crumbs.json'
+import data from "../../data/bread-crumbs.json";
 import Crumbs from "./Crumbs";
 import SliderView from "./SliderView";
 import './second-block.scss'

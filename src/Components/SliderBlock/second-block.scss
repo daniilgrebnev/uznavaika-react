@@ -27,6 +27,9 @@
 				&:hover{
 					background: #d3ffb7;
 				}
+				&.active{
+					background: aqua;
+				}
 			}
 		}
 		.view{

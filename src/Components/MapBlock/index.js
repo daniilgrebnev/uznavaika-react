@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './map-block.scss'
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 
 const MapBlock = () => {
@@ -10,13 +10,17 @@ const defaultState = {
 
   return (
       <>
-          <div className="container">
-              {/* eslint-disable-next-line react/style-prop-object */}
-              <YMaps>
-                  <Map defaultState={defaultState} width='100%' height='500px'>
-                    <Placemark geometry={[51.670495, 39.164937]} />
-                  </Map>
-              </YMaps>
+          <div className="map-block">
+              <div className="container">
+                  <h2>Мы на карте</h2>
+                  <div className="map">
+                      <YMaps>
+                          <Map defaultState={defaultState} width='100%' height='500px'>
+                            <Placemark geometry={[51.670495, 39.164937]} />
+                          </Map>
+                      </YMaps>
+                  </div>
+              </div>
           </div>
       </>
   );
