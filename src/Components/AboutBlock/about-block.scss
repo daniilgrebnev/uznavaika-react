@@ -1,0 +1,35 @@
+.about{
+
+  .container{
+
+    h2{
+        font-size: 50px;
+        color: #68904d;
+        text-align: center;
+    }
+    .about-items{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      .item{
+        width: 85%;
+        margin: 40px;
+        .layout{
+          display: flex;
+          align-items: center;
+          justify-content: left;
+          h3{
+            font-size: 30px;
+
+          }
+          img{
+            width: 50px;
+            margin-right: 50px;
+          }
+        }
+        p{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

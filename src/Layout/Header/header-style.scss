@@ -1,0 +1,28 @@
+header {
+	background-color: #68904d;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 40;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.email {
+			color: white;
+		}
+		.phones {
+			display: flex;
+			color: white;
+			p {
+				margin: 0 10px;
+			}
+		}
+		.social {
+			img {
+				margin: 0 5px;
+			}
+		}
+	}
+}
