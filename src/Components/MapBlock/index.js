@@ -15,7 +15,7 @@ const defaultState = {
                   <h2>Мы на карте</h2>
                   <div className="map">
                       <YMaps>
-                          <Map defaultState={defaultState} width='100%' height='500px'>
+                          <Map defaultState={defaultState} width='100%' height='600px'>
                             <Placemark geometry={[51.670495, 39.164937]} />
                           </Map>
                       </YMaps>
