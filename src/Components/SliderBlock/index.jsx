@@ -40,7 +40,7 @@ const SliderBlock = () => {
 								<CrumbsMobile
 									key={items.id}
 									{...items}
-									openBurgerHandller={openBurgerHandler}
+									openBurgerHandler={openBurgerHandler}
 									click={click}
 								/>
 							))}
