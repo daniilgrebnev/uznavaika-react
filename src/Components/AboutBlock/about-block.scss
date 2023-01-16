@@ -33,3 +33,13 @@
     }
   }
 }
+@media (max-width: 1000px) {
+  .about {
+
+    .container {
+      .about-items {
+        display: block;
+      }
+    }
+  }
+}

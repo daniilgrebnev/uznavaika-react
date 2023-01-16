@@ -9,6 +9,7 @@ header {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+
 		.email {
 			color: white;
 		}
@@ -23,6 +24,21 @@ header {
 			img {
 				margin: 0 5px;
 			}
+		}
+	}
+}
+@media (max-width: 1000px) {
+	.container{
+		justify-content: center !important;
+		.email {
+			display: none;
+		}
+		.phones {
+			display: none !important;
+		}
+		.social {
+			display: none;
+
 		}
 	}
 }

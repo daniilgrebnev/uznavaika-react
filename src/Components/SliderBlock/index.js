@@ -2,7 +2,11 @@ import data from "../../data/bread-crumbs.json";
 import Crumbs from "./Crumbs";
 import SliderView from "./SliderView";
 import './second-block.scss'
-// import {useSelector} from "react-redux";
+import CrumbsMobile from "./CrumbsMobile";
+import burger from '../../images/burger-bar.png'
+import {useState} from "react";
+
+
 
 
 const SliderBlock = () => {
@@ -13,6 +17,10 @@ const SliderBlock = () => {
 	// const styles = {
 	// 	background: `url(${totalImageUrl})`
 	// }
+	let [click, setClick] = useState(false)
+	const openBurgerHandller = () => {
+		setClick(click = !click)
+	}
 	return (
 		<>
 			<div className='second-block'>
@@ -21,9 +29,22 @@ const SliderBlock = () => {
 					<div className="bread-crumbs" >
 						{
 							data.map(items => (
-								<Crumbs id={items.id} {...items} />
+								<Crumbs key={items.id} {...items}/>
 							))
 						}
+					</div>
+					<div className="burger" onClick={openBurgerHandller}>
+						<div className={click ? 'burger-crumb active' : 'burger-crumb'} >
+							<p>Выбрать</p>
+							<img src={burger} alt="ok"/>
+						</div>
+						<div className={click ? 'bread-crumbs-mobile active' : 'bread-crumbs-mobile'}>
+							{
+								data.map(items => (
+									<CrumbsMobile key={items.id} {...items} openBurgerHandller={openBurgerHandller} click={click}/>
+								))
+							}
+						</div>
 					</div>
 					<div className="view">
 						<div className="back-black">

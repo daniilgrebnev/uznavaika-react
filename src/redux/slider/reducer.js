@@ -8,7 +8,9 @@ const sliderSlice = createSlice({
     reducers: {
         setDataToSlider: (state, action) => {
             state.dataToSlider.push(action.payload)
+
         },
+
 
     },
 })

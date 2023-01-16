@@ -25,7 +25,7 @@
 				color: rgb(15, 110, 3);
 				margin-bottom: 100px;
 				font-size: 20px;
-				font-family: 'Sofia Sans';
+				font-family: 'Sofia Sans', serif;
 				width: 450px;
 			}
 			button {
@@ -57,6 +57,63 @@
 			img {
 				width: 130%;
 				border-radius: 50px;
+			}
+		}
+	}
+}
+@media (max-width: 1000px) {
+	.first-block {
+
+		background-image: url(../../images/fd.jpeg);
+		background-position: initial;
+		background-attachment: local;
+		background-repeat: no-repeat;
+		background-size: auto;
+		.container {
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+			.text {
+
+				h1 {
+					font-size: 30px;
+				}
+				p {
+					font-size: 15px;
+					min-width: 100%;
+					max-width: 100%;
+					margin-bottom: 50px;
+				}
+				button {
+					padding: 10px 50px;
+					background: transparent;
+					border-radius: 25px;
+					font-size: 20px;
+					font-weight: bold;
+					font-family: 'Sofia Sans';
+					color: rgb(15, 110, 3);
+					border: none;
+					font-weight: bold;
+					text-transform: uppercase;
+					margin: 50px 0 0 0;
+					border: rgb(15, 110, 3) 5px solid;
+					cursor: pointer;
+					bottom: 0;
+					&:hover {
+						opacity: 0.8;
+					}
+				}
+			}
+			.img {
+				display: none;
+				justify-content: center;
+
+				margin: 0 0 0 100px ;
+				width: 100%;
+				img {
+					width: 130%;
+					border-radius: 50px;
+				}
 			}
 		}
 	}
