@@ -52,7 +52,7 @@
 			display: flex;
 			justify-content: center;
 
-			margin: 0 0 0 100px ;
+			margin: 0 0 0 100px;
 			width: 100%;
 			img {
 				width: 130%;
@@ -63,10 +63,9 @@
 }
 @media (max-width: 1000px) {
 	.first-block {
-
 		background-image: url(../../images/fd.jpeg);
 		background-position: initial;
-		background-attachment: local;
+		background-attachment: fixed;
 		background-repeat: no-repeat;
 		background-size: auto;
 		.container {
@@ -74,7 +73,6 @@
 			margin: 0 auto;
 			text-align: center;
 			.text {
-
 				h1 {
 					font-size: 30px;
 				}
@@ -108,7 +106,7 @@
 				display: none;
 				justify-content: center;
 
-				margin: 0 0 0 100px ;
+				margin: 0 0 0 100px;
 				width: 100%;
 				img {
 					width: 130%;

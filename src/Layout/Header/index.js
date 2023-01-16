@@ -1,8 +1,8 @@
 import './header-style.scss'
-import logo from '../../images/logo.svg'
-import vkicon from '../../images/vkontakte.svg'
-import telegramicon from '../../images/telegram.svg'
-import watsappicon from '../../images/watsapp.svg'
+import logo from '../../images/Header/logo.svg'
+import vkicon from '../../images/Header/vkontakte.svg'
+import telegramicon from '../../images/Header/telegram.svg'
+import watsapicon from '../../images/Header/watsapp.svg'
 
 const Header = () => {
 	return (
@@ -19,7 +19,7 @@ const Header = () => {
 					</div>
 					<div className='social'>
 						<a href='../../../../Работа/uznavaika-next/pages/components'>
-							<img src={watsappicon} alt='' width={30} height={30} />
+							<img src={watsapicon} alt='' width={30} height={30} />
 						</a>
 						<a href='../../../../Работа/uznavaika-next/pages/components'>
 							<img src={vkicon} alt='' width={30} height={30} />
