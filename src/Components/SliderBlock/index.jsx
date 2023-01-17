@@ -3,7 +3,6 @@ import Crumbs from './Crumbs'
 import SliderView from './SliderView'
 import './second-block.scss'
 import CrumbsMobile from './CrumbsMobile'
-import burger from '../../images/burger-bar.png'
 import { useState } from 'react'
 
 const SliderBlock = () => {
@@ -29,7 +28,9 @@ const SliderBlock = () => {
 					<div className='burger' onClick={openBurgerHandler}>
 						<div className={click ? 'burger-crumb active' : 'burger-crumb'}>
 							<p>Выбрать</p>
-							<img src={burger} alt='ok' />
+							<div className='burger-icon'>
+								<span className={click ? 'active' : ''}></span>
+							</div>
 						</div>
 						<div
 							className={

@@ -4,7 +4,9 @@ body {
   font-family: "Sofia Sans";
   padding: 0;
   margin: 0;
-
+  &.popup{
+    overflow: hidden;
+  }
 
 }
 
@@ -17,5 +19,11 @@ code {
     margin: 0 auto;
 
   }
-
+@media (max-width: 1000px) {
+  body{
+    &.popup{
+      overflow-y: hidden;
+    }
+  }
+}
 

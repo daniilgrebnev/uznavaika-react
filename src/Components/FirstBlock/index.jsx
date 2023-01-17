@@ -1,7 +1,24 @@
 import './first-block.scss'
 import img from '../../images/2.jpg'
+import ContactFormPopup from "../../Layout/ContactFormPopup";
+
+import {useState} from "react";
 const FirstBlock = () => {
+	let [click, setClick] = useState(false)
+	const openModal = () => {
+		setClick(click = true)
+		document.body.classList.add('popup')
+	}
+		const closeModal = () => {
+			setClick(click = !click)
+			if(click){
+				document.body.classList.remove('popup')
+			}else{
+
+			}
+	}
 	return (
+		<>
 		<div className='first-block'>
 			<div className='container'>
 				<div className='text'>
@@ -10,13 +27,19 @@ const FirstBlock = () => {
 						Детский развивающий центр УЗНАВАЙКА приглашает вас в мир новых
 						знаний, творчества и открытий!
 					</p>
-					<button>Заказать звонок</button>
+					<button onClick={openModal}>Заказать звонок</button>
 				</div>
 				<div className='img'>
 					<img src={img} alt='' />
 				</div>
 			</div>
+
 		</div>
+		<div className={click ? 'popup-block active' : 'popup-block' }>
+
+			<ContactFormPopup />
+		</div>
+		</>
 	)
 }
 export default FirstBlock

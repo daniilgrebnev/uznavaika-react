@@ -126,8 +126,50 @@
 						font-weight: bold;
 						color: white;
 					}
-					img {
-						width: 50px;
+					.burger-icon{
+						width: 30px;
+						height: 30px;
+						position: relative;
+
+						span{
+							height: 4px;
+							width: 100%;
+							background: white;
+							top: 0;
+							position: absolute;
+							border-radius: 15px;
+							&:before{
+								content: '';
+								height: 4px;
+								width: 100%;
+								background: white;
+								top: 10px;
+								border-radius: 15px;
+								position: absolute;
+								transition: all .3s ease-in-out;
+							}
+							&:after{
+								content: '';
+								height: 4px;
+								width: 100%;
+								background: white;
+								top: 20px;
+								border-radius: 15px;
+								position: absolute;
+								transition: all .3s ease-in-out;
+							}
+							&.active{
+								height: 0;
+								&:before{
+									top: 10px;
+									transform: rotate(45deg);
+								}
+								&:after{
+									top: 10px;
+									transform: rotate(-45deg);
+								}
+							}
+						}
 					}
 				}
 				.bread-crumbs-mobile {
