@@ -10,12 +10,8 @@ const FirstBlock = () => {
 		document.body.classList.add('popup')
 	}
 		const closeModal = () => {
-			setClick(click = !click)
-			if(click){
-				document.body.classList.remove('popup')
-			}else{
-
-			}
+			setClick(click = false)
+			document.body.classList.toggle('popup')
 	}
 	return (
 		<>
@@ -36,8 +32,7 @@ const FirstBlock = () => {
 
 		</div>
 		<div className={click ? 'popup-block active' : 'popup-block' }>
-
-			<ContactFormPopup />
+			<ContactFormPopup closeModal={closeModal} click={click}/>
 		</div>
 		</>
 	)
